@@ -17,7 +17,7 @@ plot2 <- function(){
         Sys.setlocale("LC_TIME", "English")
         
         #Create plot, type = "l" to obtain "lineal graphic"
-        #label y axis = "Global Active Power (kilowatts)", label x axis = ""
+        #label x axis = "", label y axis = "Global Active Power (kilowatts)"
         plot(data$datetime,data$Global_active_power, type="l", xlab = "", ylab = "Global Active Power (kilowatts)")
                 
         #Close PNG

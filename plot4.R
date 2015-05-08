@@ -22,7 +22,7 @@ plot4 <- function(){
         
         ##PLOT UPPER LEFT
         #Create plot, type = "l" to obtain "lineal graphic"
-        #label y axis = "Global Active Power", label x axis = ""
+        #label x axis = "", label y axis = "Global Active Power"
         plot(data$datetime,data$Global_active_power, type="l", xlab = "", ylab = "Global Active Power")
         
         ##PLOT LOWER LEFT
@@ -43,7 +43,7 @@ plot4 <- function(){
         plot(data$datetime,data$Voltage, type="l", xlab = "datetime", ylab = "Voltage")
         
         ##PLOT LOWER RIGHT
-        #Create plot, type = "l" to obtain "lineal graphic", label x axis = "datetime", label y axis = "Voltage"
+        #Create plot, type = "l" to obtain "lineal graphic", label x axis = "datetime", label y axis = "Global_reactive_power"
         plot(data$datetime,data$Global_reactive_power, type="l", xlab = "datetime", ylab = "Global_reactive_power")
         
         #Close PNG
